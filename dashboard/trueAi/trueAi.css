@@ -1,0 +1,120 @@
+.trueAiParent {
+  height: auto;
+  width: 100%;
+}
+
+.trueAiDescriptionParent .heading {
+  font-size: 58px;
+  display: flex;
+  gap: 20px;
+  color: white;
+
+  justify-content: center;
+}
+
+.trueAiContentParent {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  background-color: #272e5c;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  height: 550px;
+}
+
+.vectorImage {
+  margin-left: 60px;
+}
+
+.trueAiDescriptionParent {
+  width: 45%;
+  text-align: center;
+}
+
+.trueAiDescriptionParent .description {
+  font-size: 26px;
+  color: white;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.gradiantHeading {
+  background: linear-gradient(to right, #f32170, #5f02d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+.movingGradient {
+  font-size: 18px;
+  background: linear-gradient(to right, #ff00cc, #3333ff, #00ccff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: animateGradient 5s linear infinite;
+}
+.movingGradientParent {
+  margin: 16px 0;
+  color: white;
+}
+
+.generalDescription {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.darkTrueAiParent {
+  background-color: black;
+}
+
+.darkTrueAiContentParent {
+  background-color: #242424;
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  height: 550px;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .vectorImage {
+    display: none;
+  }
+
+  .trueAiDescriptionParent {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .trueAiDescriptionParent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trueAiContentParent {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%) !important;
+    padding-top: 0;
+    height: 500px;
+  }
+
+  .trueAiDescriptionParent .heading {
+    font-size: 50px;
+  }
+
+  .generalDescription {
+    width: 80%;
+  }
+}

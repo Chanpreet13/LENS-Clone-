@@ -1,0 +1,91 @@
+.enquiryInputParent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 80%;
+	gap: 30px;
+	margin-left: 50px;
+}
+
+.enquiryInputParent .inputHeading {
+	font-family: 400;
+	font-size: 18px;
+	text-align: center;
+}
+
+.mapContentParent {
+	width: 50%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.inputParent {
+	height: 40px;
+	width: 80%;
+	background-color: #dedede;
+	border-radius: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainInput {
+	background-color: transparent;
+	width: 80%;
+	padding-left: 35px;
+}
+
+.mainInput:focus-visible {
+	outline: none !important;
+}
+
+.enquiryHeading {
+	text-align: left;
+	margin-left: 50px;
+}
+
+.inputButton {
+	background-color: #272e5c;
+	color: white;
+	border-radius: 30px;
+	padding: 0 20px;
+	font-size: 11px;
+}
+
+.mapParent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.enuiryMainParent {
+	display: flex;
+	background-image: linear-gradient(to bottom, #ffffff, #fcfbf7);
+}
+
+.darkEnuiryMainParent {
+	background-color: black;
+	background-image: none;
+	display: flex;
+	color: white;
+}
+
+@media only screen and (max-width: 550px) {
+	.inputButton {
+		font-size: 12px;
+	}
+
+	.mapImage {
+		object-fit: contain;
+	}
+
+	.enuiryMainParent {
+		flex-direction: column;
+	}
+
+	.mapContentParent {
+		width: 100%;
+		text-align: left;
+	}
+}

@@ -1,0 +1,17 @@
+.gradiantBorder {
+  width: 5%;
+  height: 7px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #0091ff, #9cfeff);
+}
+
+.miniHeading {
+  font-size: 20px;
+}
+
+.miniHeadingParent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}

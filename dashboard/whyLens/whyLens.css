@@ -1,0 +1,123 @@
+.lensDescription {
+	font-size: 18px;
+	font-weight: 500;
+	width: 60%;
+	color: #8a8a8a;
+	margin: 30px 0;
+}
+.whyLensMainParent {
+	padding-top: 100px;
+}
+
+.darkWhyLensMainParent {
+	padding-top: 100px;
+	background-color: black !important;
+	background-image: none;
+	color: white;
+}
+
+.lensHeading {
+	width: 60%;
+}
+
+.checkpointsParent {
+	display: flex;
+	gap: 60px;
+	font-weight: 500;
+}
+
+.checkpointsParent .right li {
+	font-size: 18px;
+	list-style: none;
+	font-weight: 400;
+}
+
+.checkpointsParent .left li {
+	list-style: none;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.whyLensCardParent {
+	flex-wrap: nowrap;
+	width: 95%;
+	transition: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+
+.whyLensTitle {
+	font-weight: 500;
+	color: black;
+	font-size: 26px;
+}
+
+.whyLensCardContentParent {
+	display: flex;
+	height: 430px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.darkWhyLensCardContentParent {
+	background-color: #242424;
+	display: flex;
+	height: 430px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.whyLensCardImage {
+	object-fit: contain;
+}
+
+.whyLensBorderDiv {
+	width: 100%;
+	height: 433px;
+	margin-top: 100px;
+	transition: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+
+.whyLensCardImageParent {
+	height: 100px;
+	transition: 05s;
+	transition-timing-function: ease-in-out;
+}
+
+.whyLensCardDescription {
+	margin-top: 0;
+}
+
+.whyLensServiceParent {
+	gap: 10px;
+	margin-top: 100px;
+}
+
+@media only screen and (max-width: 550px) {
+	.lensHeading {
+		width: 90%;
+	}
+
+	.whyLensMainParent {
+		margin-top: 70px;
+	}
+
+	.lensDescription {
+		width: 65%;
+		text-align: center;
+	}
+
+	.checkpointsParent {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.whyLensBorderDiv {
+		margin-top: 50px;
+		width: 94%;
+	}
+}

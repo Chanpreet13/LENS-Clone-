@@ -1,0 +1,86 @@
+.dashboardParent {
+  height: 550px;
+  width: 100%;
+  background-image: linear-gradient(to right, #f5f8f5, #c3ebee, #fdcca6);
+  padding-top: 70px;
+}
+
+.titleContentParent {
+  width: 70%;
+  margin: auto;
+}
+.titleParent {
+  width: 50%;
+}
+.mainTitle {
+  font-size: 58px;
+  font-weight: bold;
+}
+
+.titleDescription {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 750px) {
+  .titleDescription {
+    display: none;
+  }
+
+  .titleParent {
+    width: 80%;
+  }
+
+  .titleContentParent {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .dashboardParent {
+    height: 400px;
+  }
+
+  .mainTitle {
+    font-size: 48px;
+  }
+
+  .aboutContentParent {
+    flex-direction: column;
+    height: 670px;
+    justify-content: normal;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+
+  .aboutTextParent {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .aboutTextParent .description {
+    margin-top: 20px;
+  }
+
+  .imageParent {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .titleParent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleParent .mainTitle {
+    font-size: 38px;
+  }
+}

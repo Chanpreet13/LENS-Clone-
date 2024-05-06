@@ -1,0 +1,80 @@
+.socialLogoParent {
+	display: flex;
+	gap: 16px;
+}
+
+.logoWithText {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.logoParent {
+	height: 190px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footerOptionParent {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 85%;
+	padding-top: 50px 0;
+}
+
+.sitemapParent {
+	display: flex;
+	gap: 50px;
+	flex-direction: column;
+}
+
+.sitemapParent .heading {
+	font-weight: 500;
+}
+
+.optionParent p {
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+.optionParent p:hover {
+	cursor: pointer;
+	background-image: linear-gradient(to right, #0091ff, #9cfeff);
+	-webkit-background-clip: text;
+	font-weight: 400;
+
+	-webkit-text-fill-color: transparent;
+}
+
+.darkFooterOptionParent {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 100%;
+	padding: 100px 110px 0;
+	color: white;
+}
+
+@media only screen and (max-width: 550px) {
+	.footerOptionParent {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 30px;
+	}
+
+	.logoWithText {
+		align-items: center;
+	}
+
+	.logoParent {
+		height: 170px;
+	}
+
+	.gradiantBorder {
+		width: 12%;
+	}
+}

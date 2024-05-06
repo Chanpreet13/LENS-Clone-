@@ -1,0 +1,75 @@
+.parent {
+	background-color: white !important;
+	position: fixed;
+	top: -100px;
+	transition: top 0.3s;
+}
+
+.contentParent {
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbarMenuParent {
+	width: 42%;
+	display: flex;
+	gap: 30px;
+}
+
+.navbarMenuParent li {
+	list-style: none;
+}
+
+.navbarMenuParent li:hover {
+	text-shadow: 0px -1px 0px black;
+	cursor: pointer;
+}
+
+.visible {
+	top: 0;
+}
+
+.barsIconParent {
+	display: none;
+}
+
+.darkMode {
+	background-color: black;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0px;
+	transition: top 0.3s;
+}
+
+@media only screen and (max-width: 750px) {
+	.navbarMenuParent {
+		display: none;
+	}
+
+	.barsIconParent {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.sideMenuParent {
+		height: 700px;
+		width: 70%;
+		background-color: black;
+		position: absolute;
+		right: 0;
+		top: 70px;
+		padding: 20px;
+	}
+
+	.sideMenuContentParent {
+		color: white;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
